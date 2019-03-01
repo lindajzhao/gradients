@@ -12,7 +12,7 @@ gulp.task('styles', () => {
     return gulp.src('./src/styles/**/*.scss')
         .pipe(sass())
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./public/styles/'))
+        .pipe(gulp.dest('.'))
         .pipe(reload({stream:true}));
 });
 
@@ -29,7 +29,7 @@ gulp.task('js', () => {
         }))
         .pipe(source('app.js'))
         .pipe(buffer())
-        .pipe(gulp.dest('./public/scripts'))
+        .pipe(gulp.dest('.'))
         .pipe(reload({ stream: true }));
 });
 

@@ -1,0 +1,35 @@
+:root {
+  --hue: 0; }
+
+.text {
+  background: linear-gradient(to bottom, hsla(calc(var(--hue) - 300), 61%, 69%, 1) 0%, hsla(calc(var(--hue) - 200), 81%, 36%, 1) 30%, hsla(calc(var(--hue) - 172), 89%, 21%, 1) 65%, hsla(var(--hue), 73%, 55%, 1) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40vw;
+  font-family: 'Helvetica', Arial, sans-serif;
+  line-height: 0.9;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  line-break: break;
+  letter-spacing: -8px;
+  word-break: break-all;
+  text-align: center; }
+  @media (min-width: 1000px) {
+    .text {
+      font-size: 30vw; } }
+
+.bg {
+  background: linear-gradient(to bottom, hsla(calc(var(--hue) - 300), 61%, 69%, 1) 0%, hsla(calc(var(--hue) - 200), 81%, 36%, 1) 30%, hsla(calc(var(--hue) - 172), 89%, 21%, 1) 65%, hsla(var(--hue), 73%, 55%, 1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 60px);
+  height: 100%;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: scroll;
+  padding: 0 30px; }

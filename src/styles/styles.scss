@@ -1,4 +1,27 @@
-$gradient: linear-gradient(to bottom, rgba(224,126,224,1) 0%, rgba(18,116,168,0.99) 31%, rgba(6,99,87,0.98) 65%, rgba(224,54,54,0.97) 100%);
+:root {
+  --hue: 0;
+}
+
+$c1: hsla(300, 61%, 69%, 1);
+$c2: hsla(201, 81%, 36%, 1);
+$c3: hsla(172, 89%, 21%, 1);
+$c4: hsla(0, 73%, 55%, 1);
+
+// rbga
+// $gradient: linear-gradient(to bottom, 
+//     rgba(224,126,224,1) 0%,
+//     rgba(18,116,168,1) 30%,
+//     rgba(6,99,87,1) 65%,
+//     rgba(224,54,54,1) 100%
+// );
+
+// hsla
+$gradient: linear-gradient(to bottom, 
+    $c1 0%,
+    $c2 30%,
+    $c3 65%,
+    $c4 100%
+);
 
 .text {
     background: $gradient;
